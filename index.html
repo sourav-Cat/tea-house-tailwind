@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House With Tailwind Project</title>
+
+    <!-- tailwind css script  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- google font manrooope -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<!-- font awsome cdn -->
+ <script src="https://kit.fontawesome.com/120dfd5ad9.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+     .font-man{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+}
+  </style>
+</head>
+<body>
+     <!-- main section  -->
+      <main class="max-w-screen-xl mx-auto px-4 lg:px-20">
+         <!-- header section -->
+    <header class="border-2 border-red-600 rounded-3xl flex flex-col lg:flex-row items-center gap-8 p-8">
+        <div class="lg:w-1/2">
+            <!-- txt and paragraph -->
+             <h3 class="text-4xl lg:text-7xl font-man font-bold leading-tight">
+                It's good <br> 
+                    tea time at The <br> Tea House
+             </h3>
+             <p class="font-man w-full lg:w-3/4 pt-7 text-left text-[#777777] text-lg" >
+                Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+             </p>
+             <button class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-xl text-white p-4 mt-6 rounded-xl w-auto text-center font-semibold hover:shadow-lg transition-all duration-300">
+                 Explore More <i class="fa-solid fa-arrow-right ml-2 transform -rotate-45"></i>
+             </button>
+        </div>
+        <div class="lg:w-1/2 relative">
+            <div>
+                <img class="w-full rounded-lg" src="images/banner.png" alt="Tea House Banner">
+            </div>
+            <div class="absolute flex rounded-xl bg-white shadow-2xl px-4 py-3 text-left items-center bottom-4 left-4 md:px-6 md:py-4 lg:left-8 lg:bottom-8">
+               <div>
+                    <i class="fa-regular text-2xl text-amber-500 fa-star"></i>
+               </div>
+                <div class="ml-3">
+                    <h2 class="text-2xl font-bold">5.00</h2>
+                     <p class="text-[#777777] text-sm">
+                    Trust Pilot Ratings
+                     </p>
+                </div>
+               
+            </div>
+        </div>
+
+    </header>
+
+      </main>
+      <!-- footer section -->
+       <footer>
+
+       </footer>
+
+</body>
+</html>
